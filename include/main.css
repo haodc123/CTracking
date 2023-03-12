@@ -1,0 +1,259 @@
+body {
+	margin-top: 0px; 
+	width: 100%;
+}
+div.indicator {
+	width: 100%;
+	height: 4px; 
+}
+div.in-all {
+	background-color: #0086b3;
+}
+div.in-mark {
+	background-color: #b35900;
+}
+div.in-auto {
+	background-color: #99003d;
+}
+div#sb-left {
+	width: 15%;
+	height: 100%;
+	float: left;
+	position: fixed;
+}
+
+div#sb-left #module-nav {
+	width: 100%;
+}
+div.sb-all {
+	background-color: #d6f5f5;
+}
+div.sb-mark {
+	background-color: #fff0b3;
+}
+div.sb-auto {
+	background-color: #ffcce0;
+}
+#module-nav ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#module-nav li {
+	width: 33%;
+	float: left;
+}
+li.li-all {
+	background-color: #1ac6ff;
+}
+li.li-mark {
+	background-color: #ffa64d;
+}
+li.li-auto {
+	background-color: #ff1a75;
+}
+#module-nav li a {
+	display: inline-block;
+	color: white;
+	width: 100%;
+	text-align: center;
+ 	padding-top: 14px;
+ 	padding-bottom: 14px;
+	text-decoration: none;
+}
+#module-nav li.li-all a:hover {
+	background-color: #0086b3;
+}
+#module-nav li.li-all a.active {
+	background-color: #0086b3;
+}
+#module-nav li.li-mark a:hover {
+	background-color: #b35900;
+}
+#module-nav li.li-mark a.active {
+	background-color: #b35900;
+}
+#module-nav li.li-auto a:hover {
+	background-color: #99003d;
+}
+#module-nav li.li-auto a.active {
+	background-color: #99003d;
+}
+
+#paging {
+	width: 170px;
+	margin: auto;
+	margin-top: 5px;
+	height: 25px;
+}
+#paging div {
+	width: 24px;
+	float: left;
+	height: 100%;
+	text-align: center;
+	line-height: 25px;
+}
+#paging div a {
+	color: #0086b3;
+	text-decoration: none;
+}
+#paging div:hover, #paging div:hover a, #paging div#pg_cur, #paging div#pg_cur a {
+	background-color: #0086b3;
+	color: white;
+}
+#paging div.pg_hide {
+	display: none;
+}
+
+.cbutton {
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #0086b3;
+	background: #0086b3;
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#search {
+	width: 100%;
+	margin: 0px;
+	padding-left: 5px;
+	margin-top: 5px;
+	height: 25px;
+}
+#search .search-text {
+	width: 120px;
+	border: 1px solid #0086b3;
+	border-right: none;
+	padding-left: 3px;
+	height: 100%;
+	outline: none;
+	color: #9DBA88;
+}
+
+#search .search-text:focus {
+	color: #0086b3;
+}
+
+#search .search-button {
+	width: 60px;
+}
+
+#calculator {
+	width: 100%;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+#calculator .cal-unit-price {
+	width: 100%;
+	height: 15px;
+	margin-top: 8px;
+}
+.cal-unit-price label {
+	width: 40%;
+	float: left;
+	line-height: 15px;
+}
+.cal-unit-price input {
+	width: 52%;
+	float: left;
+	line-height: 15px;
+}
+#calculator #cal-rate {
+	margin-top: 10px;
+}
+#cal-rate-line {
+	margin-bottom: 4px;
+	width: 94%;
+	height: 1px;
+	background-color: #0086b3;
+}
+#calculator #cal-man {
+	width: 92%;
+	margin-top: 15px;
+	height: 20px;
+}
+#cal-man div {
+	float: right;
+	margin-left: 3px;
+}
+#cal-man #cal-man-rev {
+	background-color: #0086b3;
+}
+#cal-man #cal-man-cal {
+	background-color: #ff1a75;
+}
+
+#other {
+	width: 100%;
+	margin: 0px;
+	padding-left: 5px;
+	margin-top: 5px;
+	height: 25px;
+}
+#other #reset-mark {
+	width: 90px;
+}
+
+div#wrapper {
+	width: 85%;
+	float: right;
+}
+div#main {
+	margin-top: 4px;
+	width: 100%;
+}
+div.clear {
+	clear: both;
+}
+.chartWrapper {
+	position: relative;
+	height: 320px; 
+	width: 100%;
+}
+.chartWrapper .chartContainer {
+	height: 100%;
+	width: 100%;
+}
+.chartWrapper .mark {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 35px;
+	height: 30px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	#search {
+		height: 50px;
+	}
+	#search .search-text {
+		width: 120px;
+		height: 25px;
+	}
+	#search .search-button {
+		width: 55px;
+		margin-top: 5px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.cal-unit-price label {
+		display: none;
+	}
+	#other #reset-mark {
+		width: 100px;
+	}
+	#cal-man div {
+		float: left;
+		margin-left: 3px;
+	}
+}
